@@ -1,0 +1,271 @@
+:root{
+    --a: #00BBDF; /* lado Esquerdo */
+    --b: #FC5674; /* lado Doreito */
+    --c: #293533; /* border do border da tela */
+    --d: #000000; /* border da tela */
+    --e: #202124; /* Tela */
+    --f: #D7E1E2; /* Letras */
+    --g: #0b839b; /*  sombra */
+    --h: #463b3b; /*  botão */
+    --i: #00BCE4;
+    --j: #FF4333;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74bcc5;
+}
+
+.RR{
+    margin: 160px 0 0 0px;
+    position: relative;
+    width: 110px;
+    height: 50px;
+    border-radius: 1000px 50px 0 0;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    z-index: 1;
+    position: relative;
+    transition: 5s;
+}
+
+.LL{
+    margin: 160px 0 0 140px;
+    position: relative;
+    width: 110px;
+    height: 50px;
+    border-radius: 50px 1000px 0 0;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    z-index: 1;
+    position: relative;
+    transition: 1s;
+}
+
+body:hover .LL{
+    margin: 160px 0 0 440px;
+}
+
+.geral{
+    z-index: 2;
+    margin-top: 440px;
+    position: absolute;
+}
+
+.geral:hover .right{
+    margin: -300px 0 0 528px;
+}
+
+.geral:hover .fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 290px;
+    background-color: var(--e);  
+}
+
+.geral:hover .tela{
+    width: 350px;
+    height: 240px;
+    opacity: 100%;
+    transition: 5s;
+}
+
+/* Esquerda */
+
+.left{
+    background-color: var(--a);
+    width: 120px;
+    height: 300px;
+    border-radius: 60px 0 0 60px;
+    border: 4px solid var(--h);
+}
+
+.x{
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    background-color: var(--c);
+    margin: 40px 0 0 25px;
+    border: 5px solid var(--e);
+}
+
+.y{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    font-size: 115px;
+    margin: 0px 0 -10px 0px;
+    color: var(--e);
+    position: absolute;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    border: 5px solid var(--e);
+    margin: 10px 0 0 0;
+    position: relative;
+    background-color: var(--c);   
+}
+
+.arrowFL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 20px 0 0 45px;
+}
+
+.arrowLL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 0 0 0 75px;
+}
+
+.arrowBL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 0 0 0 45px;
+}
+
+.arrowRL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: -58px 0 0 15px;
+}
+
+.square{
+    width: 6px;
+    height: 6px;
+    background-color: var(--c);
+    border: 4px solid var(--e);
+    margin: 50px 0 0 90px;
+}
+
+
+/* Direita */
+
+.right{
+    background-color: var(--b);
+    width: 120px;
+    height: 300px;
+    margin: -300px 0 0 238px;
+    border-radius: 0 60px 60px 0;
+    border: 4px solid var(--c);
+    transition: 1s;
+}
+
+.arrowFR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 20px 0 0 45px;
+}
+
+.arrowLR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 0 0 0 75px;
+}
+
+.arrowBR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: 0 0 0 45px;
+}
+
+.arrowRR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--c);
+    border: 5px solid var(--e);
+    margin: -58px 0 0 15px;
+}
+
+.circle-2{
+    width: 6px;
+    height: 6px;
+    background-color: var(--c);
+    border: 4px solid var(--e);
+    border-radius: 100px;
+    margin: 50px 0 0 20px;
+}
+
+/* Tela  */
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 290px;
+    background-color: var(--e);
+    margin: -300px 0 0 128px;
+    transition: 1s;
+}
+
+.tela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1;
+    height: 240px;
+    background-color: var(--e);
+    opacity: 0;
+}
+
+img{
+    width: 350px;
+    height: 230px;
+}
